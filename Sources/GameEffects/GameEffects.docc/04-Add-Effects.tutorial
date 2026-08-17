@@ -1,0 +1,25 @@
+@Tutorial(time: 15) {
+    @Intro(title: "音とエフェクトを追加しよう！") {
+        音、振動、数字の動き、紙吹雪を追加して、ゲームをもっと盛り上げよう！
+    }
+
+    @Section(title: "GameEffectsを追加しよう！") {
+        @ContentAndMedia {
+            Xcode の **File > Add Package Dependencies...** を開いて、次のURLを貼り付けよう！
+
+            `https://github.com/ObaShion/swiftui-count-game-tutorial`
+
+            `GameEffects` にチェックを付けてアプリへ追加したら準備完了だよ！
+        }
+
+        @Steps {
+            @Step {
+                `import GameEffects` と3つの合図を追加して、通常・スペシャル・ゲーム終了の演出を呼び出そう！
+
+                @Code(name: "ContentView.swift", file: "04-Effects.swift", previousFile: "03-Special.swift") {
+                    @Image(source: "preview-04-effects.png", alt: "音とアニメーションが追加された赤と青の数取りゲーム")
+                }
+            }
+        }
+    }
+}

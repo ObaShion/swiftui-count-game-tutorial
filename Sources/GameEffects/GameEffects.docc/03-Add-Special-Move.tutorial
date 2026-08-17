@@ -1,0 +1,21 @@
+@Tutorial(time: 15) {
+    @Intro(title: "スペシャルワザを追加しよう！") {
+        1ゲームに1回だけ使える「5とる」を追加するよ！ いつ使うかで勝負が変わるかも！
+    }
+
+    @Section(title: "使用済みを覚えよう！") {
+        @ContentAndMedia {
+            赤と青がスペシャルを使ったかどうかを、2つの `Bool` で覚えておこう。
+        }
+
+        @Steps {
+            @Step {
+                `redSpecialUsed` と `blueSpecialUsed` を追加して、青側と赤側に黄色いボタンを置こう！
+
+                @Code(name: "ContentView.swift", file: "03-Special.swift", previousFile: "02-Buttons.swift") {
+                    @Image(source: "preview-03-special.png", alt: "通常の1、2、3ボタンの横に黄色い5とるボタンが追加された画面")
+                }
+            }
+        }
+    }
+}

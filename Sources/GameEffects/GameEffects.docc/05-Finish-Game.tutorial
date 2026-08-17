@@ -1,0 +1,57 @@
+@Tutorial(time: 10) {
+    @Intro(title: "もう一度遊べるようにしよう！") {
+        最後にリセットボタンとPreviewを追加して、何度でも遊べる完成版にしよう！
+    }
+
+    @Section(title: "ゲームをリセットしよう！") {
+        @ContentAndMedia {
+            残りの数だけでなく、手番、勝敗、スペシャルの使用状態も全部最初に戻すよ。
+        }
+
+        @Steps {
+            @Step {
+                `resetGame()` と「もう一度あそぶ」ボタンを追加しよう。ファイルの最後には3つの `#Preview` もあるよ！
+
+                @Code(name: "ContentView.swift", file: "05-Complete.swift", previousFile: "04-Effects.swift") {
+                    @Image(source: "preview-05-complete.png", alt: "リセットボタンまで追加された完成版の数取りゲーム")
+                }
+            }
+        }
+    }
+
+    @Section(title: "Previewで3つの状態を見てみよう！") {
+        @ContentAndMedia {
+            Xcode のCanvasでは、ゲームを何度も操作しなくても大事な3画面をすぐ確認できるよ！
+        }
+
+        @Steps {
+            @Step {
+                「赤の番」では、下の赤いフィールドが明るく表示されるよ！
+
+                @Image(source: "preview-final-red-turn.png", alt: "赤の番になっていて下半分の赤いフィールドが明るく表示された完成版ゲーム")
+            }
+            @Step {
+                「青の番」では、上の青いフィールドが明るく表示されるよ！
+
+                @Image(source: "preview-final-blue-turn.png", alt: "青の番になっていて上半分の青いフィールドが明るく表示された完成版ゲーム")
+            }
+            @Step {
+                「ゲーム終了」では、負けたプレイヤーと「もう一度あそぶ」ボタンを確認できるよ！
+
+                @Image(source: "preview-final-game-over.png", alt: "赤の負けという結果ともう一度あそぶボタンが表示された完成版ゲーム")
+            }
+        }
+    }
+
+    @Section(title: "自分だけのルールも作ってみよう！") {
+        @ContentAndMedia {
+            完成したら、最初の数を変える、スペシャルをランダムにする、好きなチームカラーへ変える、のどれかに挑戦してみよう！
+        }
+
+        @Steps {
+            @Step {
+                変えたいルールを1文で書いてから、必要な `@State` とボタン処理を考えてみよう！
+            }
+        }
+    }
+}

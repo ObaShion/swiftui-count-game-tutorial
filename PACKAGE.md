@@ -1,25 +1,24 @@
 # GameEffects
 
-`GameEffects` is a tiny SwiftUI package for a beginner number-taking game. It
-adds optional sounds, haptics, a number bounce, a special-action flash, and an
-end-of-game confetti overlay. It has no images or sound files to configure.
+`GameEffects` は、数取りゲームへ楽しい演出を足せる小さな SwiftUI Package だよ！
+効果音、振動、数字のアニメーション、スペシャル技の光、ゲーム終了時の紙吹雪が
+用意されています。画像や音声ファイルを自分で設定しなくても使えるよ。
 
-## Add it in Xcode
+## Xcodeへ追加しよう！
 
-1. In the app project, choose **File > Add Package Dependencies**.
-2. Paste `https://github.com/ObaShion/swiftui-count-game-tutorial`, choose the
-   desired version or branch, and add the
-   `GameEffects` library to the app target.
-3. Add `import GameEffects` at the top of `ContentView.swift`.
+1. アプリのプロジェクトで **File > Add Package Dependencies** を選ぼう！
+2. `https://github.com/ObaShion/swiftui-count-game-tutorial` を貼り付けて、
+   `GameEffects` をアプリのターゲットへ追加しよう！
+3. `ContentView.swift` の先頭に `import GameEffects` と書けば準備完了！
 
-For a local workshop copy, use **File > Add Package Dependencies > Add Local**
-and choose this repository's root folder instead.
+会場でオフライン利用するときは **Add Local** を選び、このリポジトリの一番上の
+フォルダを指定すれば使えるよ！ iOS 17以上に対応しています。
 
 The package supports iOS 17 and later (and builds on macOS 14 for development).
 On devices or environments that cannot play a system sound or vibrate, the game
 still works normally.
 
-## Public API
+## 使える機能
 
 ```swift
 import GameEffects
@@ -43,6 +42,6 @@ ZStack {
 }
 ```
 
-Use `.special` for a one-time special button and `.gameOver` when a player
-reaches zero. Increase the appropriate trigger integer every time the effect
-should play; for example, `countEffectTrigger += 1`.
+一度だけ使えるスペシャルボタンでは `.special`、残りが0になったときは
+`.gameOver` を使おう！ 演出をもう一度出すときは、対応する数字を
+`countEffectTrigger += 1` のように増やせばいいよ。

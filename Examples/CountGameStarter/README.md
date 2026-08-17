@@ -1,12 +1,14 @@
 # Count Game Starter
 
-中高生向けSwiftUIチュートリアルの、最終章で使う完成サンプルです。対象は **iOS 17 以上**です。
+ファイルを自分のXcodeプロジェクトへコピーして試せる完成サンプルだよ！
+プロジェクトごと開きたいときは、となりの `CountGameComplete` を使ってね。
+対象は **iOS 17以上**です。
 
 ## Xcodeへ入れるもの
 
-1. Xcodeで **iOS App** を新規作成します。
-2. プロジェクトの`App`ファイルを`CountGameApp.swift`の内容に置き換えます。
-3. `ContentView.swift`をこのフォルダの同名ファイルで置き換えます。
+1. Xcodeで **iOS App** を新しく作ろう！
+2. プロジェクトの`App`ファイルを`CountGameApp.swift`の内容に置き換えよう！
+3. `ContentView.swift`も、このフォルダの同名ファイルで置き換えよう！
 4. プロジェクト設定の **Package Dependencies** で、
    `https://github.com/ObaShion/swiftui-count-game-tutorial` を追加します。
 5. iPhoneシミュレータ（iOS 17以上）で実行します。

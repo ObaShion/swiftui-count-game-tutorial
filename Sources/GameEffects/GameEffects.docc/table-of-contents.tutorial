@@ -1,10 +1,16 @@
 @Tutorials(name: "数取りゲーム教材") {
-    @Intro(title: "数取りゲームをレベルアップ") {
-        SwiftUIで作った数取りゲームに、見た目・特殊ワザ・演出を少しずつ加えていきます。
+    @Intro(title: "数取りゲームをレベルアップしよう！") {
+        SwiftUI で作った数取りゲームに、かっこいい見た目、スペシャルワザ、音と演出を少しずつ追加していくよ！
     }
 
-    @Chapter(name: "ゲームを完成させよう") {
+    @Chapter(name: "ゲームを完成させよう！") {
         @Image(source: "game-cover.png", alt: "赤と青に分かれた数取りゲームの画面")
-        @TutorialReference(tutorial: "doc:Game-Upgrade")
+        最初のコードを少しずつ変えながら、遊びたくなるゲームへ仕上げよう！
+
+        @TutorialReference(tutorial: "doc:01-Create-Fields")
+        @TutorialReference(tutorial: "doc:02-Improve-Buttons")
+        @TutorialReference(tutorial: "doc:03-Add-Special-Move")
+        @TutorialReference(tutorial: "doc:04-Add-Effects")
+        @TutorialReference(tutorial: "doc:05-Finish-Game")
     }
 }

@@ -1,0 +1,21 @@
+@Tutorial(time: 10) {
+    @Intro(title: "ボタンをゲームらしくしよう！") {
+        数字を大きくして、押せるボタンと押せないボタンがすぐ分かるようにするよ！
+    }
+
+    @Section(title: "大きくて押しやすいボタンを作ろう！") {
+        @ContentAndMedia {
+            `1`、`2`、`3` を大きく見せて、その下に「とる」と表示しよう！
+        }
+
+        @Steps {
+            @Step {
+                青と赤の6個のボタンを同じ形に整えよう。残りが足りないボタンは自動で押せなくなるよ！
+
+                @Code(name: "ContentView.swift", file: "02-Buttons.swift", previousFile: "01-Layout.swift") {
+                    @Image(source: "preview-02-buttons.png", alt: "青と赤のフィールドに1、2、3の大きなゲームボタンが並んだ画面")
+                }
+            }
+        }
+    }
+}

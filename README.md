@@ -1,22 +1,30 @@
 # SwiftUI Count Game Tutorial
 
-中高生向けの SwiftUI 数取りゲーム教材です。リポジトリには、60分の DocC
-チュートリアル、演出を追加する Swift Package `GameEffects`、完成サンプルが
-含まれています。
+SwiftUI で数取りゲームを楽しくレベルアップする、中高生向けの教材だよ！
+5つの DocC Tutorials、演出を追加できる Swift Package `GameEffects`、そのまま
+Xcodeで開ける完成版プロジェクトが入っています。
 
 ## DocC チュートリアル
 
-公開版は GitHub Pages で閲覧できます。
+公開版は GitHub Pages ですぐに読めるよ！ 「Tutorials」として、手を動かしながら
+順番に進められます。
 
 **[チュートリアルを開く](https://obashion.github.io/swiftui-count-game-tutorial/tutorials/table-of-contents/)**
 
-ローカルでプレビューする場合は、リポジトリ直下で次を実行します。
+自分のMacでプレビューしたいときは、リポジトリの一番上で次を実行してみよう！
 
 ```bash
 swift package --disable-sandbox preview-documentation --target GameEffects
 ```
 
-## GameEffects を追加する
+## 完成版を動かしてみよう！
+
+[`Examples/CountGameComplete`](Examples/CountGameComplete) の
+`CountGameComplete.xcodeproj` をXcodeで開けば、完成したゲームをそのまま実行できます！
+`ContentView.swift` の下には3つの `#Preview` もあるので、「赤の番」「青の番」
+「ゲーム終了」をすぐに見比べられるよ。
+
+## GameEffects を追加しよう！
 
 Xcode の **File > Add Package Dependencies...** に次の URL を入力します。
 
@@ -24,14 +32,15 @@ Xcode の **File > Add Package Dependencies...** に次の URL を入力しま�
 https://github.com/ObaShion/swiftui-count-game-tutorial
 ```
 
-`GameEffects` ライブラリをアプリのターゲットへ追加し、使用する Swift ファイルで
-`import GameEffects` を記述してください。対応環境は iOS 17 以上です。
+`GameEffects` ライブラリをアプリのターゲットへ追加して、使いたい Swift ファイルに
+`import GameEffects` と書けば準備完了！ 対応環境は iOS 17 以上だよ。
 
 ## 内容
 
 - `Sources/GameEffects` — 効果音、触覚、アニメーション、紙吹雪の Swift Package
-- `Sources/GameEffects/GameEffects.docc` — 日本語の DocC チュートリアル
-- `Examples/CountGameStarter` — 完成版 SwiftUI サンプル
+- `Sources/GameEffects/GameEffects.docc` — 日本語の DocC Tutorialsと8枚の実画面画像
+- `Examples/CountGameComplete` — Xcodeで開ける完成版プロジェクト
+- `Examples/CountGameStarter` — ファイルをコピーして試せる別形式のサンプル
 - `PACKAGE.md` — `GameEffects` の API と導入方法
 
 ## ビルド
@@ -44,5 +53,5 @@ swift package --allow-writing-to-directory ./docs \
   --hosting-base-path swiftui-count-game-tutorial
 ```
 
-`main` ブランチへの push では GitHub Actions が DocC を生成し、GitHub Pages へ
-自動デプロイします。
+`main` ブランチへpushすると、GitHub ActionsがDocCを作り、GitHub Pagesへ
+自動で公開してくれるよ！

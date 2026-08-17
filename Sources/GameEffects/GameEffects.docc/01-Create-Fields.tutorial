@@ -1,0 +1,26 @@
+@Tutorial(time: 10) {
+    @Intro(title: "赤と青のフィールドを作ろう！") {
+        今のゲームはもう遊べる状態だよ！ まずは青・中央・赤の場所がひと目で分かる画面へ変えてみよう！
+    }
+
+    @Section(title: "フィールドと中央カードを整えよう！") {
+        @ContentAndMedia {
+            この教材では、上が青、真ん中が残りの数、下が赤になっているコードから始めるよ。上下の `VStack` に背景色を付けて、残りの数は白いカードのように見せよう！
+        }
+
+        @Steps {
+            @Step {
+                まずは `ContentView.swift` 全体を見て、いまの位置を確認しよう。青・真ん中・赤のコードを省略せずに載せているので、どこへ書くか分かるよ！
+
+                @Code(name: "ContentView.swift", file: "00-StartingPoint.swift", reset: true)
+            }
+            @Step {
+                青と赤のフィールドにグラデーションを追加しよう。中央には「残りの数」と大きな数字を表示するよ！
+
+                @Code(name: "ContentView.swift", file: "01-Layout.swift", previousFile: "00-StartingPoint.swift") {
+                    @Image(source: "preview-01-layout.png", alt: "上半分が青、中央が白い数字カード、下半分が赤になった数取りゲーム")
+                }
+            }
+        }
+    }
+}
