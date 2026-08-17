@@ -8,7 +8,7 @@
 
 公開版は GitHub Pages で閲覧できます。
 
-**[チュートリアルを開く](https://obashion.github.io/swiftui-count-game-tutorial/tutorials/%E6%95%B0%E5%8F%96%E3%82%8A%E3%82%B2%E3%83%BC%E3%83%A0%E6%95%99%E6%9D%90/)**
+**[チュートリアルを開く](https://obashion.github.io/swiftui-count-game-tutorial/tutorials/table-of-contents/)**
 
 ローカルでプレビューする場合は、リポジトリ直下で次を実行します。
 
