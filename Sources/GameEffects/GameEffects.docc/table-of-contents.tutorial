@@ -1,0 +1,10 @@
+@Tutorials(name: "数取りゲーム教材") {
+    @Intro(title: "数取りゲームをレベルアップ") {
+        SwiftUIで作った数取りゲームに、見た目・特殊ワザ・演出を少しずつ加えていきます。
+    }
+
+    @Chapter(name: "ゲームを完成させよう") {
+        @Image(source: "game-cover.png", alt: "赤と青に分かれた数取りゲームの画面")
+        @TutorialReference(tutorial: "doc:Game-Upgrade")
+    }
+}
