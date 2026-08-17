@@ -15,9 +15,24 @@
                 @Code(name: "ContentView.swift", file: "00-StartingPoint.swift", reset: true)
             }
             @Step {
-                青と赤のフィールドにグラデーションを追加しよう。中央には「残りの数」と大きな数字を表示するよ！
+                まずは上半分だけ！ 青側の `VStack` に余白と青いグラデーションを追加しよう。
 
-                @Code(name: "ContentView.swift", file: "01-Layout.swift", previousFile: "00-StartingPoint.swift") {
+                @Code(name: "青いフィールド", file: "01-BlueField.swift", reset: true)
+            }
+            @Step {
+                次は真ん中だけ！ 結果と残りの数を、大きな白いカードにまとめよう。
+
+                @Code(name: "中央のカード", file: "01-CountCard.swift", reset: true)
+            }
+            @Step {
+                最後に下半分だけ！ 赤側にも同じ余白とグラデーションを追加しよう。
+
+                @Code(name: "赤いフィールド", file: "01-RedField.swift", reset: true)
+            }
+            @Step {
+                3つのブロックを入れたあとの `ContentView.swift` 全体だよ。上下の位置もここで確認しよう！
+
+                @Code(name: "ContentView.swift（ここまでの完成形）", file: "01-Layout.swift", reset: true) {
                     @Image(source: "preview-01-layout.png", alt: "上半分が青、中央が白い数字カード、下半分が赤になった数取りゲーム")
                 }
             }

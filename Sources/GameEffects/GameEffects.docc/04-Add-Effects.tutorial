@@ -14,9 +14,24 @@
 
         @Steps {
             @Step {
-                `import GameEffects` と3つの合図を追加して、通常・スペシャル・ゲーム終了の演出を呼び出そう！
+                まず `import GameEffects` と、3種類の演出を動かす合図を追加しよう！
 
-                @Code(name: "ContentView.swift", file: "04-Effects.swift", previousFile: "03-Special.swift") {
+                @Code(name: "演出の準備", file: "04-EffectSetup.swift", reset: true)
+            }
+            @Step {
+                数字の動き、スペシャルの光、ゲーム終了の紙吹雪を画面へ取り付けよう！
+
+                @Code(name: "画面の演出", file: "04-ViewEffects.swift", reset: true)
+            }
+            @Step {
+                `take` の中で合図を増やし、音と振動も鳴らそう！
+
+                @Code(name: "操作したときの演出", file: "04-PlayEffects.swift", reset: true)
+            }
+            @Step {
+                演出を入れたあとの全体だよ！ アプリを操作すると数字・音・振動が反応するよ。
+
+                @Code(name: "ContentView.swift（ここまでの完成形）", file: "04-Effects.swift", reset: true) {
                     @Image(source: "preview-04-effects.png", alt: "音とアニメーションが追加された赤と青の数取りゲーム")
                 }
             }

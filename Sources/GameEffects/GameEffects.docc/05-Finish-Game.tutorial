@@ -10,9 +10,24 @@
 
         @Steps {
             @Step {
-                `resetGame()` と「もう一度あそぶ」ボタンを追加しよう。ファイルの最後には3つの `#Preview` もあるよ！
+                まず、ゲーム終了中だけ表示する「もう一度あそぶ」ボタンを追加しよう！
 
-                @Code(name: "ContentView.swift", file: "05-Complete.swift", previousFile: "04-Effects.swift") {
+                @Code(name: "リセットボタン", file: "05-ResetButton.swift", reset: true)
+            }
+            @Step {
+                次に、数・手番・勝敗・スペシャルを最初へ戻す `resetGame()` を追加しよう！
+
+                @Code(name: "リセット処理", file: "05-ResetFunction.swift", reset: true)
+            }
+            @Step {
+                ファイルの最後へ3つの `#Preview` を追加しよう！ 赤の番・青の番・ゲーム終了を別々に確認できるよ。
+
+                @Code(name: "3つのPreview", file: "05-Previews.swift", reset: true)
+            }
+            @Step {
+                すべてを入れた完成版の全体だよ！ ボタンを押して何度でも遊べるか確認しよう。
+
+                @Code(name: "ContentView.swift（完成版）", file: "05-Complete.swift", reset: true) {
                     @Image(source: "preview-05-complete.png", alt: "リセットボタンまで追加された完成版の数取りゲーム")
                 }
             }

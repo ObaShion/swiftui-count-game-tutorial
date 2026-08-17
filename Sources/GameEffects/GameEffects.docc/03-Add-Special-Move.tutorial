@@ -10,9 +10,29 @@
 
         @Steps {
             @Step {
-                `redSpecialUsed` と `blueSpecialUsed` を追加して、青側と赤側に黄色いボタンを置こう！
+                まず、赤と青がスペシャルを使ったか覚える2つの `@State` を追加しよう！
 
-                @Code(name: "ContentView.swift", file: "03-Special.swift", previousFile: "02-Buttons.swift") {
+                @Code(name: "使用状態", file: "03-SpecialState.swift", reset: true)
+            }
+            @Step {
+                次に、黄色いスペシャルボタンの見た目を作ろう！ 使用後はチェックマークへ変わるよ。
+
+                @Code(name: "スペシャルの見た目", file: "03-SpecialLabel.swift", reset: true)
+            }
+            @Step {
+                青と赤の `HStack` の最後に、1個ずつスペシャルボタンを追加しよう！
+
+                @Code(name: "スペシャルボタン", file: "03-SpecialButtons.swift", reset: true)
+            }
+            @Step {
+                最後に `take` を少し広げて、5個取った側を使用済みにしよう！
+
+                @Code(name: "スペシャルの処理", file: "03-SpecialLogic.swift", reset: true)
+            }
+            @Step {
+                すべてを入れたあとの全体だよ！ 黄色いボタンが青と赤に1個ずつあるか確認しよう。
+
+                @Code(name: "ContentView.swift（ここまでの完成形）", file: "03-Special.swift", reset: true) {
                     @Image(source: "preview-03-special.png", alt: "通常の1、2、3ボタンの横に黄色い5とるボタンが追加された画面")
                 }
             }
